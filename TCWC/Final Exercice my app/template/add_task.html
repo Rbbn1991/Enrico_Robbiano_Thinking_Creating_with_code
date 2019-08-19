@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/k_style.css">
+    <title>Add a new task</title>
+</head>
+<body>
+    
+<h1>Create a new task:</h1>
+
+<form action="/task_created" method="get" class="input_form">
+    <label >Robbiano</label>
+    <label class="container">Enrico
+            <input type="radio" name="All" value="Enrico">
+            <span class="checkmark"></span>
+    </label>
+    <label class="container">Ruxandra
+            <input type="radio" name="All" value="Ruxandra">
+            <span class="checkmark"></span>
+    </label>
+    <label class="container">Together
+            <input type="radio" name="All" value="All" checked>
+            <span class="checkmark"></span>
+    </label>
+    <p></p>
+
+    <label class="container">Due date
+    <input type="date" id="start" name="d" value=$$DATE$$ min="2019-01-01" max="2020-12-31">
+    </label>
+    <p></p>
+    <input type="text" value="default value" name="t" id="input_task" class="input_text">
+    <p></p>
+    <input type="submit" value="Add">
+</form>
+
+<script src="static/clear_space.js"></script>    
+</body>
+</html>
